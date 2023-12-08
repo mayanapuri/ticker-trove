@@ -1,1 +1,1 @@
-# ticker-finder
+# Hey! :wave: Welcome to Ticker Trove. 
