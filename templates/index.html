@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Ticker Trove</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <h1>Ticker Trove</h1>
     <form action="/search" method="post">
         <input type="text" name="company" placeholder="Enter Company Name">
-        <input type="submit" value="Search">
+        <button type="submit">Search</button>
     </form>
 </body>
 </html>

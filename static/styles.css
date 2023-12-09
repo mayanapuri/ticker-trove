@@ -1,0 +1,78 @@
+/* Importing Roboto Mono from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+/* Universal Styles */
+body, input, button, textarea {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+/* Body Styles */
+body {
+    background-color: black;
+    color: lightgreen; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Styles */
+h1 {
+    color: lightgreen;
+}
+
+/* Input Styles */
+input[type="text"], input[type="submit"] {
+    border: 2px solid lightgreen;
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="text"]:focus, input[type="submit"]:hover {
+    border-color: lightgreen;
+}
+
+/* Image Styles */
+img {
+    max-width: 90px; 
+    max-height: 90px;
+    width: auto;
+    height: auto;
+}
+
+/* Button Styles */
+button, .button {
+    border: 2px solid lightgreen;
+    background-color: black;
+    color: lightgreen;
+    padding: 10px 20px; /* Adjust padding to match the size of the search button */
+    font-size: 16px; /* Adjust font size as needed */
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-decoration: none; /* Removes underline from links */
+    font-family: 'Roboto Mono', monospace; /* Ensure font consistency */
+    display: inline-block; /* Aligns correctly with other inline elements */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Adjusting hover effect for buttons and button-like links */
+button:hover, .button:hover {
+    background-color: lightgrey; /* Change background color on hover */
+    color: black; /* Keep text color consistent on hover */
+}

@@ -29,4 +29,4 @@ def search():
         return f"Error: {response.status_code} {response.text}"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
