@@ -7,7 +7,7 @@
 <body>
     <div class="header">
         {% if data %}
-        <h1>{{ data['name'] }} ({{ data['ticker'] }})</h1>
+        <h1 class="title-middle">{{ data['name'] }} ({{ data['ticker'] }})</h1>
         <img src="{{ data['image'] }}" alt="Company Logo" class="company-logo">
         {% else %}
         <p>Sorry! An error occurred.</p>
