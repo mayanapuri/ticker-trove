@@ -27,7 +27,7 @@ code .
 ```bash
 export API_NINJAS_KEY='TYPEYOURAPIKEYHERE'
 ```
-# Don't have an API key? Get on here :key:
+# Don't have an API key? Get one here :key:
 ### Follow these steps to obtain an API key from API Ninjas:
 * STEP 1: Hold the command key and click on the link below. 
 [API Ninjas](https://api-ninjas.com/) 

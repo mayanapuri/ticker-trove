@@ -1,15 +1,7 @@
-/* Importing Roboto Mono from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonogram&display=swap');
 
-/* Universal Styles */
-body, input, button, textarea {
-    font-family: 'Roboto Mono', monospace; 
-}
-
-/* Body Styles */
 body {
     background-color: black;
-    color: lightgreen; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,59 +12,54 @@ body {
     box-sizing: border-box;
 }
 
-/* Heading Styles */
 h1 {
     color: lightgreen;
+    font-family: 'Sonogram', sans-serif;
+    text-align: center;
 }
 
-/* Input Styles */
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="submit"], .button, .button:visited, .button:hover, .button:active {
     border: 2px solid lightgreen;
     background-color: black;
     color: lightgreen;
-    padding: 10px;
-    border-radius: 25px;
+    font-family: 'Sonogram', sans-serif;
+    padding: 10px 20px;
+    border-radius: 25px; /* Adjust as needed */
     outline: none;
-}
-
-input[type="text"] {
-    width: 300px;
-}
-
-input[type="submit"] {
     cursor: pointer;
+    text-decoration: none;
 }
 
-input[type="text"]:focus, input[type="submit"]:hover {
+input[type="text"]:focus, input[type="submit"]:focus, .button:focus {
     border-color: lightgreen;
 }
 
-/* Image Styles */
-img {
-    max-width: 90px; 
-    max-height: 90px;
-    width: auto;
-    height: auto;
+.header {
+    display: flex;
+    align-items: center;
 }
 
-/* Button Styles */
-button, .button {
+.company-logo {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+button[type="submit"], .button, .button:visited, .button:hover, .button:active {
     border: 2px solid lightgreen;
     background-color: black;
     color: lightgreen;
-    padding: 10px 20px; /* Adjust padding to match the size of the search button */
-    font-size: 16px; /* Adjust font size as needed */
-    border-radius: 25px;
+    font-family: 'Sonogram', sans-serif;
+    padding: 10px 20px;
+    border-radius: 25px; /* Adjust as needed */
     outline: none;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    text-decoration: none; /* Removes underline from links */
-    font-family: 'Roboto Mono', monospace; /* Ensure font consistency */
-    display: inline-block; /* Aligns correctly with other inline elements */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer;
+    text-decoration: none;
 }
 
-/* Adjusting hover effect for buttons and button-like links */
-button:hover, .button:hover {
-    background-color: lightgrey; /* Change background color on hover */
-    color: black; /* Keep text color consistent on hover */
+.button {
+    margin-top: 50px;
 }
